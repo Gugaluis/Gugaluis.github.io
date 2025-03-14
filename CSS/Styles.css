@@ -275,12 +275,6 @@ body {
     color: var(--main-text-color);
 }
 
-.resume-container {
-    margin-top: 30px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-}
 
 /* Mobile */
 @media(max-width: 768px) {
