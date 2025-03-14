@@ -1,93 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Luis Gustavo</title>
+    <title>Luis Gustavo | Desenvolvedor</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" type="image/png">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- DEV Icon Fonts -->
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <!-- CSS do Projeto -->
     <link rel="stylesheet" href="CSS/Styles.css">
-          
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <main id="container">
-        <aside id = "bio-container">
+        <aside id="bio-container" data-aos="fade-right">
             <h2>Luis Gustavo</h2>
             <img src="Images/Profile.jpeg" alt="Luis Gustavo">
-            <p>Olá, meu nome é Luis Gustavo e sou <span class="highlight">estudante de análise e desenvolvimento de sistemas,</span> atualmente cursando o 4º período</p>
-            <p id="welcome-text">Seja bem-vindo!</p>
+            
+            <p>Olá, meu nome é Luis Gustavo e sou <span class="highlight">Estudante de Análise e Desenvolvimento de Sistemas</span>, atualmente cursando o último período do curso.</p>
+            
+            <p id="welcome-text">Seja bem-vindo ao meu portfólio!</p>
+            
             <ul id="social-container">
-                <li><a href="https://www.linkedin.com/in/luis-gustavo-6b0b70220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                <li><a href="https://api.whatsapp.com/send/?phone=5599984041062&text&type=phone_number&app_absent=0" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/luis-gustavo-6b0b70220" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://api.whatsapp.com/send/?phone=5599984041062" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Gugaluis" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
             </ul>
+            
             <div id="email-container">
-                <ion-icon name="mail-outline"></ion-icon><a href="mailto:devluisantos@gmail.com">devluisantos@gmail.com</a>
+                <ion-icon name="mail-outline"></ion-icon>
+                <a href="mailto:devluisantos@gmail.com">devluisantos@gmail.com</a>
             </div>
         </aside>
 
         <section id="about-container">
-            <h1 id="name">Luis Gustavo</h1>
-            <p id="title"><span class="highlight">Estudante de análise e desenvolvimento de sistemas</span></p>
-            <p class="desctiption">
-                Focado na área de <span class="highlight">desenvolvimento back-end.</span> Sou apaixonado por tecnologias como <span class="highlight">Python e Laravel</span>, com foco em programação orientada a objetos.
-            </p>
-
-            <br>
-            <a href="https://github.com/Gugaluis?tab=repositories" id="btn-projects"><ion-icon name="share-social-outline"></ion-icon><span>Ver Projetos</span></a>
-            <h2 id="skills-section-title">Minhas Skills</h2>
-            <p class="description">Conheça as tecnologias que estou aprendendo:</p>
-            <div id="skill-container">
-                <div id="skills-box">
-                    <p class="skills-title">Front-end</p>
-                    <i class="devicon-html5-plain colored"></i>
-                    <i class="devicon-css3-plain colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
-                </div>
-                <div id="skills-box">
-                    <p class="skills-title">Back-end</p>
-                    <i class="devicon-php-plain colored"></i>
-                    <i class="devicon-python-plain colored"></i>
-                </div>
-                <div id="skills-box">
-                    <p class="skills-title">Databases</p>
-                    <i class="devicon-mysql-plain colored"></i>
-                    <i class="devicon-postgresql-plain colored"></i>
-                </div>
-                <div id="skills-box">
-                    <p class="skills-title">Back-end Frameworks</p>
-                    <i class="devicon-laravel-plain colored"></i>
-                    <i class="devicon-django-plain colored"></i>
-                </div>
-                <div id="skills-box">
-                    <p class="skills-title">Tools</p>
-                    <i class="devicon-github-original"></i>
-                    <i class="devicon-linux-plain"></i>
-                    <i class="devicon-windows11-plain colored"></i>
-                    <i class="devicon-git-plain colored"></i>
+            <div data-aos="fade-up">
+                <h1 id="name">Luis Gustavo</h1>
+                <p id="title"><span class="highlight">Desenvolvedor Back-end em formação</span></p>
+                
+                <p class="description">
+                    Focado no <span class="highlight">desenvolvimento back-end</span>, sou apaixonado por
+                    tecnologias como <span class="highlight">Python e Laravel</span>, com ênfase em 
+                    programação orientada a objetos e construção de aplicações web robustas e escaláveis.
+                </p>
+                
+                <a href="https://github.com/Gugaluis?tab=repositories" id="btn-projects" target="_blank">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                    <span>Ver Projetos</span>
+                </a>
+            </div>
+            
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h2 class="section-title">Minhas Skills</h2>
+                <p class="description">Conheça as tecnologias que estou aprendendo e aplicando em meus projetos:</p>
+                
+                <div id="skill-container">
+                    <div class="skills-box" data-aos="zoom-in" data-aos-delay="100">
+                        <p class="skills-title">Front-end</p>
+                        <i class="devicon-html5-plain colored" title="HTML5"></i>
+                        <i class="devicon-css3-plain colored" title="CSS3"></i>
+                        <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+                    </div>
+                    
+                    <div class="skills-box" data-aos="zoom-in" data-aos-delay="200">
+                        <p class="skills-title">Back-end</p>
+                        <i class="devicon-php-plain colored" title="PHP"></i>
+                        <i class="devicon-python-plain colored" title="Python"></i>
+                    </div>
+                    
+                    <div class="skills-box" data-aos="zoom-in" data-aos-delay="300">
+                        <p class="skills-title">Databases</p>
+                        <i class="devicon-mysql-plain colored" title="MySQL"></i>
+                        <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
+                    </div>
+                    
+                    <div class="skills-box" data-aos="zoom-in" data-aos-delay="400">
+                        <p class="skills-title">Frameworks</p>
+                        <i class="devicon-laravel-plain colored" title="Laravel"></i>
+                        <i class="devicon-django-plain colored" title="Django"></i>
+                    </div>
+                    
+                    <div class="skills-box" data-aos="zoom-in" data-aos-delay="500">
+                        <p class="skills-title">Tools</p>
+                        <i class="devicon-github-original" title="GitHub"></i>
+                        <i class="devicon-git-plain colored" title="Git"></i>
+                        <i class="devicon-vscode-plain colored" title="VSCode"></i>
+                    </div>
+                    
+                    <div class="skills-box" data-aos="zoom-in" data-aos-delay="600">
+                        <p class="skills-title">Sistemas</p>
+                        <i class="devicon-linux-plain" title="Linux"></i>
+                        <i class="devicon-windows11-plain colored" title="Windows"></i>
+                    </div>
                 </div>
             </div>
-        
-        <hr>
-        <h2 id="skills-section-title">Currículo</h2>
-        <p class="description">Veja abaixo meu currículo: </p>
-
-            <div style="position: relative; width: 100%; height: 0; padding-top: 141.4286%;
-            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-            border-radius: 8px; will-change: transform;">
-             <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-               src="https://www.canva.com/design/DAGWe3qhBzA/nw_oDnE-yTE9MZ2hNleLbA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-             </iframe>
-           </div>
-
+            
+            <div data-aos="fade-up" data-aos-delay="400">
+                <h2 class="section-title">Currículo</h2>
+                <p class="description">Conheça minha formação e experiência profissional:</p>
+                
+                <div class="resume-container">
+                    <iframe 
+                        loading="lazy" 
+                        style="position: relative; width: 100%; height: 600px; border: none; border-radius: 10px;" 
+                        src="https://www.canva.com/design/DAGWe3qhBzA/nw_oDnE-yTE9MZ2hNleLbA/view?embed" 
+                        allowfullscreen="allowfullscreen" 
+                        allow="fullscreen">
+                    </iframe>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- Ion Icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
 </body>
 </html>
