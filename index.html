@@ -21,114 +21,245 @@
 </head>
 <body>
     <main id="container">
-        <aside id="bio-container" data-aos="fade-right">
+
+        <!-- ============ BARRA LATERAL ============ -->
+        <aside id="bio-container">
             <h2>Luis Gustavo</h2>
-            <img src="Images/Profile.jpeg" alt="Luis Gustavo">
-            
-            <p>Olá, meu nome é Luis Gustavo e sou <span class="highlight">Analista de Sistemas e Desenvolvedor Back-end</span>, focado em desenvolvimento de soluções corporativas com Python, SQL e Laravel. 
-                <br> Atuo também com análise de dados, automação de processos e integração de sistemas.</p>
-            
+            <img src="Images/Profile.jpeg" alt="Foto de Luis Gustavo">
+
+            <p>Olá, meu nome é Luis Gustavo e sou <span class="highlight">Analista de Sistemas e Desenvolvedor Back-end</span>, focado em soluções corporativas com Python, SQL e Laravel.
+                <br>Atuo também com análise de dados, automação de processos e integração de sistemas.</p>
+
             <p id="welcome-text">Seja bem-vindo ao meu portfólio!</p>
-            
+
+            <span class="status">disponível para novos projetos</span>
+
             <ul id="social-container">
                 <li>
-                    <a href="https://www.linkedin.com/in/luis-gustavo-6b0b70220" target="_blank" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/luis-gustavo-6b0b70220" target="_blank" rel="noopener" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://api.whatsapp.com/send/?phone=5599984041062" target="_blank" aria-label="WhatsApp">
+                    <a href="https://api.whatsapp.com/send/?phone=5599984041062" target="_blank" rel="noopener" aria-label="WhatsApp">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/Gugaluis" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/Gugaluis" target="_blank" rel="noopener" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
             </ul>
-            
+
             <div id="email-container">
-                <ion-icon name="mail-outline"></ion-icon>
+                <i class="far fa-envelope"></i>
                 <a href="mailto:devluisantos@gmail.com">devluisantos@gmail.com</a>
             </div>
         </aside>
 
+        <!-- ============ CONTEÚDO ============ -->
         <section id="about-container">
-            <div data-aos="fade-up">
-                <h1 id="name">Luis Gustavo</h1>
-                <span class="highlight">Analista de Sistemas & Desenvolvedor Back-end</span>
-                
-                <p class="description">
-                    Atuo no desenvolvimento de aplicações web, automação de processos e análise de dados, com experiência em <span class="highlight">Python, Laravel, SQL e Power BI</span>. Desenvolvo soluções voltadas para eficiência operacional, integração de sistemas e geração de informações estratégicas para o negócio.
-                </p>
-                
-                <a href="https://github.com/Gugaluis?tab=repositories" id="btn-projects" target="_blank">
-                    <ion-icon name="code-slash-outline"></ion-icon>
-                    <span>Ver Projetos</span>
-                </a>
+
+            <!-- Hero -->
+            <div id="hero">
+                <div>
+                    <h1 id="name">Luis Gustavo</h1>
+                    <span class="role highlight">Analista de Sistemas & Desenvolvedor Back-end</span>
+
+                    <p class="description">
+                        Desenvolvo aplicações web, automatizo processos e transformo dados em informação para decidir, com <span class="highlight">Python, Django, Laravel, SQL, TOTVS RM e Power BI</span>. Construo fluxos ETL e integrações via API com foco em eficiência operacional.
+                    </p>
+
+                    <div class="cta-row">
+                        <a href="#dashboards" class="btn btn-primary">
+                            <i class="fas fa-chart-column"></i>
+                            <span>Ver dashboards</span>
+                        </a>
+                        <a href="https://github.com/Gugaluis?tab=repositories" class="btn btn-ghost" target="_blank" rel="noopener">
+                            <i class="fas fa-code"></i>
+                            <span>Ver projetos</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="terminal" aria-hidden="true">
+                    <div class="window-bar">
+                        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                        <span class="window-title">luis.py</span>
+                    </div>
+<pre><span class="tk">class</span> Luis:
+    papel = <span class="ts">"Analista de Sistemas"</span>
+    stack = [<span class="ts">"Python"</span>, <span class="ts">"Django"</span>, <span class="ts">"SQL"</span>,
+             <span class="ts">"Laravel"</span>, <span class="ts">"PHP"</span>, <span class="ts">"TOTVS RM"</span>]
+    bi    = [<span class="ts">"Power BI"</span>, <span class="ts">"DAX"</span>]
+    dados = [<span class="ts">"ETL"</span>, <span class="ts">"APIs"</span>]
+
+    <span class="tk">def</span> entrega(self):
+        <span class="tk">return</span> <span class="ts">"dados que viram decisão"</span>
+<span class="tc"># &gt;&gt;&gt; Luis().entrega()</span><span class="cursor"></span></pre>
+                </div>
             </div>
-            
-            <div data-aos="fade-up" data-aos-delay="200">
-                <h2 class="section-title">Minhas Skills</h2>
-                <p class="description">Conheça as tecnologias que estou aprendendo e aplicando em meus projetos:</p>
-                
+
+            <!-- Dashboards -->
+            <div id="dashboards">
+                <div class="section-head">
+                    <h2 class="section-title">Dashboards e BI</h2>
+                    <p class="description">Painéis que criei para acompanhar indicadores e apoiar decisões. Todos são interativos: filtre, clique e explore os dados.</p>
+                </div>
+
+                <!-- Os cards são gerados pelo JavaScript no final da página -->
+                <div id="bi-list"></div>
+            </div>
+
+            <!-- Skills -->
+            <div id="skills">
+                <div class="section-head">
+                    <h2 class="section-title">Minhas skills</h2>
+                    <p class="description">As tecnologias que aplico e continuo aprendendo nos meus projetos.</p>
+                </div>
+
                 <div id="skill-container">
-                    <div class="skills-box" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="skills-box">
                         <p class="skills-title">Front-end</p>
                         <i class="devicon-html5-plain colored" title="HTML5"></i>
                         <i class="devicon-css3-plain colored" title="CSS3"></i>
                         <i class="devicon-javascript-plain colored" title="JavaScript"></i>
                     </div>
-                    
-                    <div class="skills-box" data-aos="zoom-in" data-aos-delay="200">
+
+                    <div class="skills-box">
                         <p class="skills-title">Back-end</p>
                         <i class="devicon-php-plain colored" title="PHP"></i>
                         <i class="devicon-python-plain colored" title="Python"></i>
                     </div>
-                    
-                    <div class="skills-box" data-aos="zoom-in" data-aos-delay="300">
-                        <p class="skills-title">Databases</p>
-                        <i class="devicon-microsoftsqlserver-plain-wordmark"></i>
+
+                    <div class="skills-box">
+                        <p class="skills-title">Bancos de dados</p>
+                        <i class="devicon-microsoftsqlserver-plain-wordmark" title="SQL Server"></i>
                         <i class="devicon-mysql-plain colored" title="MySQL"></i>
                         <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
                     </div>
-                    
-                    <div class="skills-box" data-aos="zoom-in" data-aos-delay="400">
+
+                    <div class="skills-box">
                         <p class="skills-title">Frameworks</p>
                         <i class="devicon-laravel-plain colored" title="Laravel"></i>
-                        <i class="devicon-django-plain"></i>
+                        <i class="devicon-django-plain" title="Django"></i>
                     </div>
-                    
-                    <div class="skills-box" data-aos="zoom-in" data-aos-delay="500">
-                        <p class="skills-title">Tools</p>
-                        <i class="devicon-github-original" title="GitHub"></i>                        
-                        <i class="devicon-docker-plain-wordmark"></i>
+
+                    <div class="skills-box">
+                        <p class="skills-title">Ferramentas</p>
+                        <i class="devicon-github-original" title="GitHub"></i>
+                        <i class="devicon-docker-plain-wordmark" title="Docker"></i>
                         <i class="devicon-git-plain colored" title="Git"></i>
                         <i class="devicon-vscode-plain colored" title="VSCode"></i>
                     </div>
-                    
-                    <div class="skills-box" data-aos="zoom-in" data-aos-delay="600">
+
+                    <div class="skills-box">
+                        <p class="skills-title">BI & Análise de dados</p>
+                        <span class="skill-chip"><i class="fas fa-chart-column"></i>Power BI</span>
+                        <span class="skill-chip"><i class="fas fa-calculator"></i>DAX</span>
+                        <span class="skill-chip"><i class="fas fa-chart-pie"></i>Dashboards</span>
+                    </div>
+
+                    <div class="skills-box">
+                        <p class="skills-title">Dados & Integrações</p>
+                        <span class="skill-chip"><i class="fas fa-shuffle"></i>Fluxos ETL</span>
+                        <span class="skill-chip"><i class="fas fa-plug"></i>APIs</span>
+                    </div>
+
+                    <div class="skills-box">
+                        <p class="skills-title">ERP</p>
+                        <span class="skill-chip"><i class="fas fa-building"></i>TOTVS RM</span>
+                    </div>
+
+                    <div class="skills-box">
                         <p class="skills-title">Sistemas</p>
                         <i class="devicon-linux-plain" title="Linux"></i>
                         <i class="devicon-windows11-plain colored" title="Windows"></i>
                     </div>
                 </div>
             </div>
-            
+
+            <footer>
+                © <span id="year"></span> Luis Gustavo. Feito com HTML, CSS e JavaScript.
+            </footer>
         </section>
     </main>
 
-    <!-- Ion Icons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <!-- AOS Animation Library -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true
-        });
-    </script>
+<script>
+    /* ==========================================================
+       DASHBOARDS
+       ========================================================== */
+    const DASHBOARDS = [
+        {
+            title: "Dashboard de Vendas",
+            description: "Receita, ticket médio e desempenho por região e período, com filtros por produto e vendedor.",
+            tools: ["Power BI", "SQL Server", "Python", "DAX"],
+            embedUrl: "https://app.powerbi.com/view?r=eyJrIjoiZDgyMTEzZjktYWZmYi00YTgxLTk5MzktZjBhZjFjOGI1YzViIiwidCI6ImE0MTZjNTZkLTM4NDYtNDA4Ni05M2FhLTY5NDhkMzNiMWZjOSJ9"
+        },
+        {
+            title: "Indicadores Operacionais",
+            description: "Acompanhamento de prazos, volume de atendimentos e gargalos dos processos da operação.",
+            tools: ["Power BI", "Python"],
+            embedUrl: ""
+        },
+        {
+            title: "Análise Financeira",
+            description: "Fluxo de caixa, receitas e despesas por categoria, com comparativo entre meses.",
+            tools: ["Power BI", "PostgreSQL"],
+            embedUrl: ""
+        }
+    ];
+
+    /* ---------- Geração dos cards ---------- */
+    const list = document.getElementById("bi-list");
+
+    DASHBOARDS.forEach((bi, i) => {
+        const tags = bi.tools.map(t => `<span>${t}</span>`).join("");
+
+        const frameContent = bi.embedUrl
+            ? `<iframe src="${bi.embedUrl}" title="${bi.title}" loading="lazy" allowfullscreen></iframe>`
+            : `<div class="bi-empty">
+                   <i class="fas fa-chart-pie"></i>
+                   <strong>Seu dashboard aparece aqui</strong>
+                   <span>Cole o link de incorporação em <code>embedUrl</code> no final do arquivo.</span>
+               </div>`;
+
+        const card = document.createElement("article");
+        card.className = "bi-card";
+        card.innerHTML = `
+            <div class="bi-info">
+                <div>
+                    <h3>${bi.title}</h3>
+                    <p>${bi.description}</p>
+                </div>
+                <div class="bi-tags">${tags}</div>
+            </div>
+            <div class="bi-window">
+                <div class="window-bar">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                    <span class="window-title">${bi.title.toLowerCase().replace(/\s+/g, "-")}.pbix</span>
+                    <button type="button" data-target="bi-frame-${i}" aria-label="Abrir ${bi.title} em tela cheia">
+                        <i class="fas fa-expand"></i> tela cheia
+                    </button>
+                </div>
+                <div class="bi-frame" id="bi-frame-${i}" ${bi.ratio ? `style="aspect-ratio:${bi.ratio}"` : ""}>
+                    ${frameContent}
+                </div>
+            </div>`;
+        list.appendChild(card);
+    });
+
+    list.addEventListener("click", (e) => {
+        const btn = e.target.closest("button[data-target]");
+        if (!btn) return;
+        const frame = document.getElementById(btn.dataset.target);
+        if (frame && frame.requestFullscreen) {
+            frame.requestFullscreen();
+        }
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
