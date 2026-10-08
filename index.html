@@ -1,225 +1,426 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luis Gustavo | Desenvolvedor</title>
     <!-- Favicon -->
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" type="image/png">
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/1005/1005141.png"
+      type="image/png"
+    />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- DEV Icon Fonts -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <!-- CSS do Projeto -->
-    <link rel="stylesheet" href="CSS/Styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <!-- CSS do Projeto (mude o número do v= a cada alteração para evitar cache) -->
+    <link rel="stylesheet" href="CSS/Styles.css?v=4" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <!-- AOS Animation Library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-<body>
+  </head>
+  <body>
     <main id="container">
+      <!-- ============ BARRA LATERAL ============ -->
+      <aside id="bio-container">
+        <h2>Luis Gustavo</h2>
+        <img src="Images/Profile.jpeg" alt="Foto de Luis Gustavo" />
 
-        <!-- ============ BARRA LATERAL ============ -->
-        <aside id="bio-container">
-            <h2>Luis Gustavo</h2>
-            <img src="Images/Profile.jpeg" alt="Foto de Luis Gustavo">
+        <p>
+          Olá, meu nome é Luis Gustavo e sou
+          <span class="highlight"
+            >Analista de Sistemas e Desenvolvedor Back-end</span
+          >, focado em soluções corporativas com Python, SQL e Laravel.
+          <br />Atuo também com análise de dados, automação de processos e
+          integração de sistemas.
+        </p>
 
-            <p>Olá, meu nome é Luis Gustavo e sou <span class="highlight">Analista de Sistemas e Desenvolvedor Back-end</span>, focado em soluções corporativas com Python, SQL e Laravel.
-                <br>Atuo também com análise de dados, automação de processos e integração de sistemas.</p>
+        <p id="welcome-text">Seja bem-vindo ao meu portfólio!</p>
 
-            <p id="welcome-text">Seja bem-vindo ao meu portfólio!</p>
+        <span class="status">Disponível para novos projetos</span>
 
-            <span class="status">disponível para novos projetos</span>
+        <ul id="social-container">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/luis-gustavo-6b0b70220"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send/?phone=5599984041062"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Gugaluis"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
 
-            <ul id="social-container">
-                <li>
-                    <a href="https://www.linkedin.com/in/luis-gustavo-6b0b70220" target="_blank" rel="noopener" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://api.whatsapp.com/send/?phone=5599984041062" target="_blank" rel="noopener" aria-label="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/Gugaluis" target="_blank" rel="noopener" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
+        <div id="email-container">
+          <i class="far fa-envelope"></i>
+          <a href="mailto:devluisantos@gmail.com">devluisantos@gmail.com</a>
+        </div>
+      </aside>
 
-            <div id="email-container">
-                <i class="far fa-envelope"></i>
-                <a href="mailto:devluisantos@gmail.com">devluisantos@gmail.com</a>
+      <!-- ============ CONTEÚDO ============ -->
+      <section id="about-container">
+        <!-- Hero -->
+        <div id="hero">
+          <div>
+            <h1 id="name">Luis Gustavo</h1>
+            <span class="role highlight"
+              >Analista de Sistemas & Desenvolvedor Back-end</span
+            >
+
+            <p class="description">
+              Desenvolvo aplicações web, automatizo processos e transformo dados
+              em informação para decidir, com
+              <span class="highlight"
+                >Python, Django, Laravel, SQL, TOTVS RM e Power BI</span
+              >. Construo fluxos ETL e integrações via API com foco em
+              eficiência operacional.
+            </p>
+
+            <div class="cta-row">
+              <a href="#dashboards" class="btn btn-primary">
+                <i class="fas fa-chart-column"></i>
+                <span>Ver dashboards</span>
+              </a>
+              <a href="#gallery" class="btn btn-ghost">
+                <i class="fas fa-images"></i>
+                <span>Galeria</span>
+              </a>
+              <a
+                href="https://github.com/Gugaluis?tab=repositories"
+                class="btn btn-ghost"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fas fa-code"></i>
+                <span>Ver projetos</span>
+              </a>
             </div>
-        </aside>
+          </div>
 
-        <!-- ============ CONTEÚDO ============ -->
-        <section id="about-container">
+          <!-- Terminal horizontal -->
+          <div class="terminal" aria-hidden="true">
+            <div class="window-bar">
+              <span class="dot"></span><span class="dot"></span
+              ><span class="dot"></span>
+              <span class="window-title">luis.py</span>
+            </div>
+            <div class="term-body">
+              <div><span class="tk">class</span> Luis:</div>
 
-            <!-- Hero -->
-            <div id="hero">
+              <div class="term-grid">
                 <div>
-                    <h1 id="name">Luis Gustavo</h1>
-                    <span class="role highlight">Analista de Sistemas & Desenvolvedor Back-end</span>
-
-                    <p class="description">
-                        Desenvolvo aplicações web, automatizo processos e transformo dados em informação para decidir, com <span class="highlight">Python, Django, Laravel, SQL, TOTVS RM e Power BI</span>. Construo fluxos ETL e integrações via API com foco em eficiência operacional.
-                    </p>
-
-                    <div class="cta-row">
-                        <a href="#dashboards" class="btn btn-primary">
-                            <i class="fas fa-chart-column"></i>
-                            <span>Ver dashboards</span>
-                        </a>
-                        <a href="https://github.com/Gugaluis?tab=repositories" class="btn btn-ghost" target="_blank" rel="noopener">
-                            <i class="fas fa-code"></i>
-                            <span>Ver projetos</span>
-                        </a>
-                    </div>
+                  papel = <span class="ts">"Analista de Sistemas"</span>
                 </div>
-
-                <div class="terminal" aria-hidden="true">
-                    <div class="window-bar">
-                        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-                        <span class="window-title">luis.py</span>
-                    </div>
-<pre><span class="tk">class</span> Luis:
-    papel = <span class="ts">"Analista de Sistemas"</span>
-    stack = [<span class="ts">"Python"</span>, <span class="ts">"Django"</span>, <span class="ts">"SQL"</span>,
-             <span class="ts">"Laravel"</span>, <span class="ts">"PHP"</span>, <span class="ts">"TOTVS RM"</span>]
-    bi    = [<span class="ts">"Power BI"</span>, <span class="ts">"DAX"</span>]
-    dados = [<span class="ts">"ETL"</span>, <span class="ts">"APIs"</span>]
-
-    <span class="tk">def</span> entrega(self):
-        <span class="tk">return</span> <span class="ts">"dados que viram decisão"</span>
-<span class="tc"># &gt;&gt;&gt; Luis().entrega()</span><span class="cursor"></span></pre>
+                <div>
+                  stack = [<span class="ts">"Python"</span>,
+                  <span class="ts">"Django"</span>,
+                  <span class="ts">"SQL"</span>,
+                  <span class="ts">"Laravel"</span>,
+                  <span class="ts">"PHP"</span>,
+                  <span class="ts">"TOTVS RM"</span>]
                 </div>
+                <div>
+                  bi = [<span class="ts">"Power BI"</span>,
+                  <span class="ts">"DAX"</span>]
+                </div>
+                <div>
+                  dados = [<span class="ts">"ETL"</span>,
+                  <span class="ts">"APIs"</span>]
+                </div>
+              </div>
+
+              <div class="term-foot">
+                <span class="tk">def</span> entrega(self):
+                <span class="tk">return</span>
+                <span class="ts">"dados que viram decisão"</span>
+              </div>
+              <div>
+                <span class="tc"># &gt;&gt;&gt; Luis().entrega()</span
+                ><span class="cursor"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboards -->
+        <div id="dashboards">
+          <div class="section-head">
+            <h2 class="section-title">Dashboards e BI</h2>
+            <p class="description">
+              Painéis que criei para acompanhar indicadores e apoiar decisões.
+              Todos são interativos: filtre, clique e explore os dados.
+            </p>
+          </div>
+
+          <!-- Os cards são gerados pelo JavaScript no final da página -->
+          <div id="bi-list"></div>
+        </div>
+
+        <!-- Galeria -->
+        <div id="gallery">
+          <div class="section-head">
+            <h2 class="section-title">Galeria</h2>
+            <p class="description">
+              Alguns registros de projetos, eventos e bastidores. Clique em uma
+              foto para ampliar.
+            </p>
+          </div>
+          <div id="gallery-grid"></div>
+        </div>
+
+        <!-- Skills -->
+        <div id="skills">
+          <div class="section-head">
+            <h2 class="section-title">Minhas skills</h2>
+            <p class="description">
+              As tecnologias que aplico e continuo aprendendo nos meus projetos.
+            </p>
+          </div>
+
+          <div id="skill-container">
+            <div class="skills-box">
+              <p class="skills-title">Front-end</p>
+              <div class="chips">
+                <span class="skill-chip"
+                  ><i class="devicon-html5-plain"></i>HTML5</span
+                >
+                <span class="skill-chip"
+                  ><i class="devicon-css3-plain"></i>CSS3</span
+                >
+                <span class="skill-chip"
+                  ><i class="devicon-javascript-plain"></i>JavaScript</span
+                >
+              </div>
             </div>
 
-            <!-- Dashboards -->
-            <div id="dashboards">
-                <div class="section-head">
-                    <h2 class="section-title">Dashboards e BI</h2>
-                    <p class="description">Painéis que criei para acompanhar indicadores e apoiar decisões. Todos são interativos: filtre, clique e explore os dados.</p>
-                </div>
-
-                <!-- Os cards são gerados pelo JavaScript no final da página -->
-                <div id="bi-list"></div>
+            <div class="skills-box">
+              <p class="skills-title">Back-end</p>
+              <div class="chips">
+                <span class="skill-chip"
+                  ><i class="devicon-python-plain"></i>Python</span
+                >
+                <span class="skill-chip"
+                  ><i class="devicon-php-plain"></i>PHP</span
+                >
+              </div>
             </div>
 
-            <!-- Skills -->
-            <div id="skills">
-                <div class="section-head">
-                    <h2 class="section-title">Minhas skills</h2>
-                    <p class="description">As tecnologias que aplico e continuo aprendendo nos meus projetos.</p>
-                </div>
-
-                <div id="skill-container">
-                    <div class="skills-box">
-                        <p class="skills-title">Front-end</p>
-                        <i class="devicon-html5-plain colored" title="HTML5"></i>
-                        <i class="devicon-css3-plain colored" title="CSS3"></i>
-                        <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-                    </div>
-
-                    <div class="skills-box">
-                        <p class="skills-title">Back-end</p>
-                        <i class="devicon-php-plain colored" title="PHP"></i>
-                        <i class="devicon-python-plain colored" title="Python"></i>
-                    </div>
-
-                    <div class="skills-box">
-                        <p class="skills-title">Bancos de dados</p>
-                        <i class="devicon-microsoftsqlserver-plain-wordmark" title="SQL Server"></i>
-                        <i class="devicon-mysql-plain colored" title="MySQL"></i>
-                        <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
-                    </div>
-
-                    <div class="skills-box">
-                        <p class="skills-title">Frameworks</p>
-                        <i class="devicon-laravel-plain colored" title="Laravel"></i>
-                        <i class="devicon-django-plain" title="Django"></i>
-                    </div>
-
-                    <div class="skills-box">
-                        <p class="skills-title">Ferramentas</p>
-                        <i class="devicon-github-original" title="GitHub"></i>
-                        <i class="devicon-docker-plain-wordmark" title="Docker"></i>
-                        <i class="devicon-git-plain colored" title="Git"></i>
-                        <i class="devicon-vscode-plain colored" title="VSCode"></i>
-                    </div>
-
-                    <div class="skills-box">
-                        <p class="skills-title">BI & Análise de dados</p>
-                        <span class="skill-chip"><i class="fas fa-chart-column"></i>Power BI</span>
-                        <span class="skill-chip"><i class="fas fa-calculator"></i>DAX</span>
-                        <span class="skill-chip"><i class="fas fa-chart-pie"></i>Dashboards</span>
-                    </div>
-
-                    <div class="skills-box">
-                        <p class="skills-title">Dados & Integrações</p>
-                        <span class="skill-chip"><i class="fas fa-shuffle"></i>Fluxos ETL</span>
-                        <span class="skill-chip"><i class="fas fa-plug"></i>APIs</span>
-                    </div>
-
-                    <div class="skills-box">
-                        <p class="skills-title">ERP</p>
-                        <span class="skill-chip"><i class="fas fa-building"></i>TOTVS RM</span>
-                    </div>
-
-                    <div class="skills-box">
-                        <p class="skills-title">Sistemas</p>
-                        <i class="devicon-linux-plain" title="Linux"></i>
-                        <i class="devicon-windows11-plain colored" title="Windows"></i>
-                    </div>
-                </div>
+            <div class="skills-box">
+              <p class="skills-title">Frameworks</p>
+              <div class="chips">
+                <span class="skill-chip"
+                  ><i class="devicon-laravel-plain"></i>Laravel</span
+                >
+                <span class="skill-chip"
+                  ><i class="devicon-django-plain"></i>Django</span
+                >
+              </div>
             </div>
 
-            <footer>
-                © <span id="year"></span> Luis Gustavo. Feito com HTML, CSS e JavaScript.
-            </footer>
-        </section>
+            <div class="skills-box">
+              <p class="skills-title">Bancos de dados</p>
+              <div class="chips">
+                <span class="skill-chip"
+                  ><i class="devicon-microsoftsqlserver-plain"></i>SQL
+                  Server</span
+                >
+                <span class="skill-chip"
+                  ><i class="devicon-mysql-plain"></i>MySQL</span
+                >
+                <span class="skill-chip"
+                  ><i class="devicon-postgresql-plain"></i>PostgreSQL</span
+                >
+              </div>
+            </div>
+
+            <div class="skills-box">
+              <p class="skills-title">Ferramentas</p>
+              <div class="chips">
+                <span class="skill-chip"
+                  ><i class="devicon-git-plain"></i>Git</span
+                >
+                <span class="skill-chip"
+                  ><i class="devicon-github-original"></i>GitHub</span
+                >
+                <span class="skill-chip"
+                  ><i class="devicon-docker-plain"></i>Docker</span
+                >
+                <span class="skill-chip"
+                  ><i class="devicon-vscode-plain"></i>VS Code</span
+                >
+              </div>
+            </div>
+
+            <div class="skills-box">
+              <p class="skills-title">BI & Análise de dados</p>
+              <div class="chips">
+                <span class="skill-chip"
+                  ><i class="fas fa-chart-column"></i>Power BI</span
+                >
+                <span class="skill-chip"
+                  ><i class="fas fa-calculator"></i>DAX</span
+                >
+                <span class="skill-chip"
+                  ><i class="fas fa-chart-pie"></i>Dashboards</span
+                >
+              </div>
+            </div>
+
+            <div class="skills-box">
+              <p class="skills-title">Dados & Integrações</p>
+              <div class="chips">
+                <span class="skill-chip"
+                  ><i class="fas fa-shuffle"></i>Fluxos ETL</span
+                >
+                <span class="skill-chip"><i class="fas fa-plug"></i>APIs</span>
+              </div>
+            </div>
+
+            <div class="skills-box">
+              <p class="skills-title">ERP</p>
+              <div class="chips">
+                <span class="skill-chip"
+                  ><i class="fas fa-building"></i>TOTVS RM</span
+                >
+              </div>
+            </div>
+
+            <div class="skills-box">
+              <p class="skills-title">Inteligência Artificial</p>
+              <div class="chips">
+                <span class="skill-chip"
+                  ><i class="fas fa-terminal"></i>Claude Code</span
+                >
+                <span class="skill-chip"
+                  ><i class="fas fa-wand-magic-sparkles"></i>Gemini</span
+                >
+                <span class="skill-chip"
+                  ><i class="fas fa-comment-dots"></i>ChatGPT</span
+                >
+              </div>
+            </div>
+
+            <div class="skills-box">
+              <p class="skills-title">Sistemas</p>
+              <div class="chips">
+                <span class="skill-chip"
+                  ><i class="devicon-linux-plain"></i>Linux</span
+                >
+                <span class="skill-chip"
+                  ><i class="devicon-windows11-plain"></i>Windows</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          © <span id="year"></span> Luis Gustavo. Feito com HTML, CSS e
+          JavaScript.
+        </footer>
+      </section>
     </main>
 
-<script>
-    /* ==========================================================
+    <!-- Lightbox (ampliação das fotos) -->
+    <div id="lightbox" hidden>
+      <button type="button" class="lb-close" aria-label="Fechar">
+        &times;
+      </button>
+      <button type="button" class="lb-nav lb-prev" aria-label="Anterior">
+        &#10094;
+      </button>
+      <figure>
+        <img id="lb-img" src="" alt="" />
+        <figcaption>
+          <strong id="lb-title"></strong>
+          <span id="lb-desc"></span>
+        </figcaption>
+      </figure>
+      <button type="button" class="lb-nav lb-next" aria-label="Próxima">
+        &#10095;
+      </button>
+    </div>
+
+    <script>
+      /* ==========================================================
        DASHBOARDS
+       - ratio: proporção da página do relatório no Power BI
+         (teste "16 / 9", "4 / 3" ou "1280 / 760")
        ========================================================== */
-    const DASHBOARDS = [
+      const DASHBOARDS = [
         {
-            title: "Dashboard de Vendas",
-            description: "Receita, ticket médio e desempenho por região e período, com filtros por produto e vendedor.",
-            tools: ["Power BI", "SQL Server", "Python", "DAX"],
-            embedUrl: "https://app.powerbi.com/view?r=eyJrIjoiZDgyMTEzZjktYWZmYi00YTgxLTk5MzktZjBhZjFjOGI1YzViIiwidCI6ImE0MTZjNTZkLTM4NDYtNDA4Ni05M2FhLTY5NDhkMzNiMWZjOSJ9"
+          title: "Dashboard de Vendas",
+          description:
+            "Total de vendas, Valor médio e desempenho por empresa e período, com filtros por produto e vendedor.",
+          tools: ["Power BI", "SQL Server", "Python", "DAX"],
+          ratio: "16 / 9",
+          embedUrl:
+            "https://app.powerbi.com/view?r=eyJrIjoiZDgyMTEzZjktYWZmYi00YTgxLTk5MzktZjBhZjFjOGI1YzViIiwidCI6ImE0MTZjNTZkLTM4NDYtNDA4Ni05M2FhLTY5NDhkMzNiMWZjOSJ9&pageName=b4c6827753137e923438",
         },
         {
-            title: "Indicadores Operacionais",
-            description: "Acompanhamento de prazos, volume de atendimentos e gargalos dos processos da operação.",
-            tools: ["Power BI", "Python"],
-            embedUrl: ""
+          title: "Indicadores Operacionais",
+          description:
+            "Acompanhamento de prazos, volume de atendimentos e gargalos dos processos de operação em um jornal.",
+          tools: ["Power BI", "Python"],
+          embedUrl:
+            "https://app.powerbi.com/view?r=eyJrIjoiMjk1YjI2YmYtZjY3Ny00MzcxLThjMDYtNTE3MDc5NTg0NzZhIiwidCI6ImE0MTZjNTZkLTM4NDYtNDA4Ni05M2FhLTY5NDhkMzNiMWZjOSJ9&pageName=2964be6e9b07adbc580e",
         },
         {
-            title: "Análise Financeira",
-            description: "Fluxo de caixa, receitas e despesas por categoria, com comparativo entre meses.",
-            tools: ["Power BI", "PostgreSQL"],
-            embedUrl: ""
-        }
-    ];
+          title: "Análise de vendas de farmácia",
+          description:
+            "Vendas, faturamento e desempenho por categoria de produto, com comparativo entre períodos.",
+          tools: ["Power BI", "SQL Server"],
+          embedUrl:
+            "https://app.powerbi.com/view?r=eyJrIjoiMDU5ZWEyYmQtNDQ0My00NGU4LTkyOGItODUwYjRjNGE2MGNjIiwidCI6ImE0MTZjNTZkLTM4NDYtNDA4Ni05M2FhLTY5NDhkMzNiMWZjOSJ9&pageName=2ac58c62bc2107db6805",
+        },
+      ];
 
-    /* ---------- Geração dos cards ---------- */
-    const list = document.getElementById("bi-list");
+      /* ---------- Geração dos cards ---------- */
+      const list = document.getElementById("bi-list");
 
-    DASHBOARDS.forEach((bi, i) => {
-        const tags = bi.tools.map(t => `<span>${t}</span>`).join("");
+      DASHBOARDS.forEach((bi, i) => {
+        const tags = bi.tools.map((t) => `<span>${t}</span>`).join("");
+
+        // O parâmetro _ evita que o navegador use uma versão antiga em cache do iframe
+        const src = bi.embedUrl ? `${bi.embedUrl}&_=${Date.now()}` : "";
 
         const frameContent = bi.embedUrl
-            ? `<iframe src="${bi.embedUrl}" title="${bi.title}" loading="lazy" allowfullscreen></iframe>`
-            : `<div class="bi-empty">
+          ? `<iframe src="${src}" title="${bi.title}" loading="lazy" allowfullscreen></iframe>`
+          : `<div class="bi-empty">
                    <i class="fas fa-chart-pie"></i>
                    <strong>Seu dashboard aparece aqui</strong>
                    <span>Cole o link de incorporação em <code>embedUrl</code> no final do arquivo.</span>
@@ -248,18 +449,130 @@
                 </div>
             </div>`;
         list.appendChild(card);
-    });
+      });
 
-    list.addEventListener("click", (e) => {
+      list.addEventListener("click", (e) => {
         const btn = e.target.closest("button[data-target]");
         if (!btn) return;
         const frame = document.getElementById(btn.dataset.target);
         if (frame && frame.requestFullscreen) {
-            frame.requestFullscreen();
+          frame.requestFullscreen();
         }
-    });
+      });
 
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-</body>
+      /* ==========================================================
+       GALERIA — edite apenas a lista PHOTOS
+       ========================================================== */
+      const PHOTOS = [
+        /* ---------- Fotos Canal Denúncias ---------- */
+        {
+          src: "./Images/CD_Admin.jpeg",
+          title: "Área de administrador do Canal de Denúncias",
+          description:
+            "Área de administrador do Canal de Denúncias desenvolvido em Laravel + Tailwind CSS",
+        },
+        {
+          src: "./Images/CD_Home.jpeg",
+          title: "Home Page do Canal de Denúncias",
+          description:
+            "Tela inicial do Canal de Denúncias desenvolvido em Laravel + Tailwind CSS com validação para continuação no fluxo apenas após o aceite",
+        },
+        {
+          src: "./Images/CD_Orientacao.jpeg",
+          title: "Área de orientação do Canal de Denúncias",
+          description:
+            "Área de orientação do Canal de Denúncias desenvolvido em Laravel + Tailwind CSS. Solicita uma informação e o responsável entra em contato",
+        },
+        {
+          src: "./Images/CD_Detalhes.jpeg",
+          title: "Área de detalhes do Canal de Denúncias",
+          description:
+            "Área de detalhes de uma denúncia feita pelo portal, validação de dados e anexo de arquivos. Permitindo ao responsável analisar e responder à denúncia",
+        },
+        /* ---------- Fotos BI ---------- */
+        {
+          src: "./Images/BI_Home.jpeg",
+          title: "Home Page da plataforma de BI",
+          description:
+            "Tela de boas-vindas da plataforma de BI, feita em Laravel + Charts. Permitindo análise rápida de dados, tomada de decisão e apoio à equipe. O sistema cruzava um banco de dados local com os resultados vindos da API do ERP TOTVS RM",
+        },
+        {
+          src: "./Images/BI_Gestao_vagas.jpeg",
+          title: "Gestão de vagas",
+          description:
+            "Cadastro de vagas no banco de dados local do BI. Com foco na parte de vagas, controle de gestores e setores",
+        },
+        {
+          src: "./Images/BI_Prazo_Medio.jpeg",
+          title: "Prazo Médio",
+          description:
+            "Visualização do relatório de prazo médio de vendas no BI",
+        },
+        {
+          src: "./Images/BI_Resumo_Vendas.jpeg",
+          title: "Resumo de Vendas",
+          description:
+            "Página de resumo de vendas do BI, consumindo dados diretamente da API do ERP TOTVS RM. Permitindo atualização em tempo real",
+        },
+      ];
+
+      const grid = document.getElementById("gallery-grid");
+      const lb = document.getElementById("lightbox");
+      const lbImg = document.getElementById("lb-img");
+      const lbTitle = document.getElementById("lb-title");
+      const lbDesc = document.getElementById("lb-desc");
+      let current = 0;
+
+      PHOTOS.forEach((p, i) => {
+        const fig = document.createElement("figure");
+        fig.className = "photo-card";
+        fig.innerHTML = `
+            <img src="${p.src}" alt="${p.title}" loading="lazy">
+            <figcaption>
+                <strong>${p.title}</strong>
+                <span>${p.description}</span>
+            </figcaption>`;
+        fig.tabIndex = 0;
+        fig.setAttribute("role", "button");
+        fig.addEventListener("click", () => openPhoto(i));
+        fig.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            openPhoto(i);
+          }
+        });
+        grid.appendChild(fig);
+      });
+
+      function openPhoto(i) {
+        current = (i + PHOTOS.length) % PHOTOS.length;
+        const p = PHOTOS[current];
+        lbImg.src = p.src;
+        lbImg.alt = p.title;
+        lbTitle.textContent = p.title;
+        lbDesc.textContent = p.description;
+        lb.hidden = false;
+      }
+      const closePhoto = () => (lb.hidden = true);
+
+      lb.querySelector(".lb-close").addEventListener("click", closePhoto);
+      lb.querySelector(".lb-prev").addEventListener("click", () =>
+        openPhoto(current - 1),
+      );
+      lb.querySelector(".lb-next").addEventListener("click", () =>
+        openPhoto(current + 1),
+      );
+      lb.addEventListener("click", (e) => {
+        if (e.target === lb) closePhoto();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (lb.hidden) return;
+        if (e.key === "Escape") closePhoto();
+        if (e.key === "ArrowLeft") openPhoto(current - 1);
+        if (e.key === "ArrowRight") openPhoto(current + 1);
+      });
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>

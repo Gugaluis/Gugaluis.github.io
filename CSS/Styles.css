@@ -78,18 +78,18 @@ a {
 
 #container {
     display: grid;
-    grid-template-columns: 330px minmax(0, 1fr);
-    gap: 56px;
-    max-width: 1280px;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 44px;
+    max-width: 1680px;
     margin: 0 auto;
-    padding: 56px 40px 80px;
+    padding: 48px 32px 80px;
 }
 
 /* ---------- Barra lateral ---------- */
 
 #bio-container {
     position: sticky;
-    top: 56px;
+    top: 48px;
     align-self: start;
     display: flex;
     flex-direction: column;
@@ -195,13 +195,12 @@ a {
     min-width: 0;
 }
 
-/* Hero */
+/* Hero: texto em cima, terminal horizontal embaixo na largura toda */
 
 #hero {
     display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-    gap: 40px;
-    align-items: center;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
     padding-top: 12px;
 }
 
@@ -224,6 +223,10 @@ a {
     max-width: 62ch;
     color: var(--muted);
     font-size: 1.02rem;
+}
+
+#hero .description {
+    max-width: 80ch;
 }
 
 .cta-row {
@@ -302,15 +305,25 @@ a {
     color: var(--muted);
 }
 
-.terminal pre {
-    padding: 22px 20px 26px;
+.term-body {
+    padding: 22px 26px 24px;
     font-family: var(--font-mono);
-    font-size: clamp(0.7rem, 1.05vw, 0.82rem);
+    font-size: clamp(0.74rem, 1vw, 0.88rem);
     line-height: 1.8;
     color: var(--text);
-    white-space: pre-wrap;
-    overflow-wrap: anywhere;
-    overflow: hidden;
+}
+
+.term-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 40px;
+    margin: 4px 0 4px 6px;
+    padding-left: 28px;
+    border-left: 1px solid var(--border);
+}
+
+.term-foot {
+    padding-left: 34px;
 }
 
 .tk { color: var(--blue); }
@@ -353,7 +366,7 @@ a {
 
 #skill-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 16px;
 }
 
@@ -376,40 +389,38 @@ a {
     color: var(--muted);
 }
 
-.skills-box > i {
-    margin-right: 14px;
-    font-size: 2rem;
-    color: var(--muted);
-    filter: grayscale(0.35);
-    transition: filter 0.2s, transform 0.2s;
-}
-
-.skills-box > i.colored {
-    color: inherit;
-}
-
-.skills-box > i:hover {
-    filter: none;
-    transform: translateY(-3px);
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .skill-chip {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    margin: 0 8px 8px 0;
-    padding: 7px 13px;
+    gap: 9px;
+    padding: 8px 14px;
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--text);
     background: var(--surface-2);
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
+    transition: border-color 0.2s, background 0.2s, transform 0.2s;
 }
 
 .skill-chip i {
-    font-size: 0.95rem;
+    width: 1.1rem;
+    font-size: 1.1rem;
+    line-height: 1;
+    text-align: center;
     color: var(--accent);
+}
+
+.skill-chip:hover {
+    border-color: var(--accent);
+    background: var(--accent-dim);
+    transform: translateY(-2px);
 }
 
 /* ---------- Dashboards / BI ---------- */
@@ -491,10 +502,13 @@ a {
     border-color: var(--accent);
 }
 
+/* O "ratio" definido no JavaScript (style inline) sobrescreve este aspect-ratio */
 .bi-frame {
     position: relative;
+    width: 100%;
     aspect-ratio: 16 / 9;
     background: var(--bg-deep);
+    overflow: hidden;
 }
 
 .bi-frame iframe {
@@ -540,6 +554,134 @@ a {
     color: var(--accent);
 }
 
+/* ---------- Galeria ---------- */
+
+#gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.photo-card {
+    margin: 0;
+    background: rgba(13, 32, 39, 0.72);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.photo-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(63, 208, 165, 0.45);
+}
+
+.photo-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    background: var(--bg-deep);
+}
+
+.photo-card figcaption {
+    padding: 14px 16px 16px;
+}
+
+.photo-card strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.98rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.photo-card span {
+    display: block;
+    color: var(--muted);
+    font-size: 0.86rem;
+    line-height: 1.5;
+}
+
+/* Lightbox */
+
+#lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+    background: rgba(5, 14, 18, 0.92);
+    backdrop-filter: blur(6px);
+}
+
+#lightbox[hidden] {
+    display: none;
+}
+
+#lightbox figure {
+    margin: 0;
+    max-width: min(900px, 80vw);
+    text-align: center;
+}
+
+#lightbox img {
+    max-width: 100%;
+    max-height: 70vh;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+#lightbox figcaption {
+    margin-top: 16px;
+}
+
+#lightbox figcaption strong {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#lightbox figcaption span {
+    display: block;
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.lb-close,
+.lb-nav {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    font-size: 1.15rem;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.lb-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 1.5rem;
+}
+
+.lb-close:hover,
+.lb-nav:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: var(--accent-dim);
+}
+
 /* ---------- Rodapé ---------- */
 
 footer {
@@ -580,12 +722,6 @@ footer {
 
 /* ---------- Responsivo ---------- */
 
-@media (max-width: 1080px) {
-    #hero {
-        grid-template-columns: 1fr;
-    }
-}
-
 @media (max-width: 860px) {
     #container {
         grid-template-columns: 1fr;
@@ -615,6 +751,16 @@ footer {
     #about-container {
         gap: 64px;
     }
+}
+
+@media (max-width: 600px) {
+    .lb-nav {
+        position: absolute;
+        bottom: 16px;
+    }
+
+    .lb-prev { left: 16px; }
+    .lb-next { right: 16px; }
 }
 
 @media (max-width: 520px) {
